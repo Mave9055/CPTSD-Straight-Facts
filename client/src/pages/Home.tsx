@@ -6,8 +6,12 @@ export default function Home() {
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
-        <div className="container py-4">
+        <div className="container py-4 flex items-center justify-between">
           <h1 className="text-2xl font-bold text-primary">{APP_TITLE}</h1>
+          <nav className="flex gap-6 text-sm">
+            <a href="/" className="text-foreground hover:text-primary transition-colors">Home</a>
+            <a href="/facts" className="text-foreground hover:text-primary transition-colors">100 Facts</a>
+          </nav>
         </div>
       </header>
 
