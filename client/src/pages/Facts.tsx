@@ -127,6 +127,7 @@ export default function Facts() {
             <a href="/" className="text-foreground hover:text-primary transition-colors">Home</a>
             <a href="/facts" className="text-foreground hover:text-primary transition-colors">100 Facts</a>
             <a href="/faq" className="text-foreground hover:text-primary transition-colors">FAQ</a>
+            <a href="/glossary" className="text-foreground hover:text-primary transition-colors">Glossary</a>
           </nav>
         </div>
       </header>
