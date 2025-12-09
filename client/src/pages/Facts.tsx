@@ -126,6 +126,7 @@ export default function Facts() {
           <nav className="flex gap-6 text-sm">
             <a href="/" className="text-foreground hover:text-primary transition-colors">Home</a>
             <a href="/facts" className="text-foreground hover:text-primary transition-colors">100 Facts</a>
+            <a href="/faq" className="text-foreground hover:text-primary transition-colors">FAQ</a>
           </nav>
         </div>
       </header>
