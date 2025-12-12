@@ -133,6 +133,7 @@ export default function Glossary() {
             <a href="/facts" className="text-foreground hover:text-primary transition-colors">100 Facts</a>
             <a href="/faq" className="text-foreground hover:text-primary transition-colors">FAQ</a>
             <a href="/glossary" className="text-foreground hover:text-primary transition-colors">Glossary</a>
+            <a href="/tools" className="text-foreground hover:text-primary transition-colors">Tools</a>
           </nav>
         </div>
       </header>

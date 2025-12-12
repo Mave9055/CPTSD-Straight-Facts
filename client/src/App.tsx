@@ -8,6 +8,10 @@ import Home from "./pages/Home";
 import Facts from "./pages/Facts";
 import FAQ from "./pages/FAQ";
 import Glossary from "./pages/Glossary";
+import SymptomChecker from "./pages/SymptomChecker";
+import TreatmentComparison from "./pages/TreatmentComparison";
+import RecoveryTimeline from "./pages/RecoveryTimeline";
+import AssessmentQuiz from "./pages/AssessmentQuiz";
 
 function Router() {
   return (
@@ -16,6 +20,11 @@ function Router() {
       <Route path={"/facts"} component={Facts} />
       <Route path={"/faq"} component={FAQ} />
       <Route path={"/glossary"} component={Glossary} />
+      <Route path={"/tools"} component={SymptomChecker} />
+      <Route path="/symptom-checker" component={SymptomChecker} />
+      <Route path="/treatment-comparison" component={TreatmentComparison} />
+      <Route path="/recovery-timeline" component={RecoveryTimeline} />
+      <Route path="/assessment-quiz" component={AssessmentQuiz} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
