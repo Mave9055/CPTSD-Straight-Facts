@@ -9,6 +9,11 @@ import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
 
 export default defineConfig({
+  // **CRITICAL ADDITION FOR GITHUB PAGES DEPLOYMENT**
+  // This tells Vite the base path for assets, fixing the blank screen issue.
+  base: '/CPTSD-Straight-Facts/', 
+  // **END OF CRITICAL ADDITION**
+  
   plugins,
   resolve: {
     alias: {
