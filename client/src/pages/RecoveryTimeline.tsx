@@ -1,4 +1,5 @@
-import { APP_TITLE } from '@/const';
+import { APP_TITLE } from "@/const";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { CheckCircle2, AlertCircle, Lightbulb } from 'lucide-react';
 
@@ -146,12 +147,13 @@ export default function RecoveryTimeline() {
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
         <div className="container py-4 flex items-center justify-between">
           <h1 className="text-2xl font-bold text-primary">{APP_TITLE}</h1>
-          <nav className="flex gap-6 text-sm">
+          <nav className="flex gap-6 text-sm items-center">
             <a href="/" className="text-foreground hover:text-primary transition-colors">Home</a>
             <a href="/facts" className="text-foreground hover:text-primary transition-colors">100 Facts</a>
             <a href="/faq" className="text-foreground hover:text-primary transition-colors">FAQ</a>
             <a href="/glossary" className="text-foreground hover:text-primary transition-colors">Glossary</a>
-            <a href="/tools" className="text-foreground hover:text-primary transition-colors font-semibold">Tools</a>
+            <a href="/tools" className="text-foreground hover:text-primary transition-colors">Tools</a>
+            <ThemeToggle />
           </nav>
         </div>
       </header>
