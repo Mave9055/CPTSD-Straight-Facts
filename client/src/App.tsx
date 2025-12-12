@@ -13,7 +13,6 @@ import TreatmentComparison from "./pages/TreatmentComparison";
 import RecoveryTimeline from "./pages/RecoveryTimeline";
 import AssessmentQuiz from "./pages/AssessmentQuiz";
 import FindTherapist from "./pages/FindTherapist";
-import Book from "./pages/Book";
 
 function Router() {
   return (
@@ -27,8 +26,7 @@ function Router() {
       <Route path="/treatment-comparison" component={TreatmentComparison} />
       <Route path="/recovery-timeline" component={RecoveryTimeline} />
       <Route path="/assessment-quiz" component={AssessmentQuiz} />
-       <Route path={"find-therapist"} component={FindTherapist} />
-      <Route path={"/book"} component={Book} />
+      <Route path={"/find-therapist"} component={FindTherapist} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

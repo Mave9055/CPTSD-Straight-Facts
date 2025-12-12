@@ -15,23 +15,10 @@ export default function Home() {
             <a href="/faq" className="text-foreground hover:text-primary transition-colors">FAQ</a>
             <a href="/glossary" className="text-foreground hover:text-primary transition-colors">Glossary</a>
             <a href="/tools" className="text-foreground hover:text-primary transition-colors">Tools</a>
-            <a href="/find-therapist" className="text-foreground hover:text-primary transition-colors">Find Therapist</a>
-            <a href="/book" className="text-foreground hover:text-primary transition-colors font-semibold">Book</a>
             <ThemeToggle />
           </nav>
         </div>
       </header>
-
-      {/* CTA Banner for Book */}
-      <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white py-6 mb-12">
-        <div className="container text-center">
-          <h2 className="text-2xl font-bold mb-2">New Memoir Available</h2>
-          <p className="mb-4">Discover the powerful story of resilience and healing in FROM THE STORM TO THE FIRE 2025</p>
-          <a href="/book" className="inline-block bg-white text-orange-600 font-semibold px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors">
-            Learn More About the Book
-          </a>
-        </div>
-      </div>
 
       {/* Main Content */}
       <main className="flex-1">
