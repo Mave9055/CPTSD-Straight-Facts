@@ -1,8 +1,9 @@
+import Navigation from "@/components/Navigation";
 import { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { APP_TITLE } from "@/const";
-import { ThemeToggle } from "@/components/ThemeToggle";
+
+
 import { CheckCircle2, XCircle, AlertCircle } from 'lucide-react';
 
 interface Treatment {
@@ -183,20 +184,7 @@ export default function TreatmentComparison() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
-        <div className="container py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-primary">{APP_TITLE}</h1>
-          <nav className="flex gap-6 text-sm items-center">
-            <a href="/#/" className="text-foreground hover:text-primary transition-colors">Home</a>
-            <a href="/#/facts" className="text-foreground hover:text-primary transition-colors">100 Facts</a>
-            <a href="/#/faq" className="text-foreground hover:text-primary transition-colors">FAQ</a>
-            <a href="/#/glossary" className="text-foreground hover:text-primary transition-colors">Glossary</a>
-            <a href="/#/tools" className="text-foreground hover:text-primary transition-colors">Tools</a>
-            <ThemeToggle />
-          </nav>
-        </div>
-      </header>
+<Navigation />
 
       {/* Main Content */}
       <main className="flex-1">
