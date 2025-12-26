@@ -1,12 +1,15 @@
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { APP_TITLE } from "@/const";
 
-// Helper function to generate proper links with hash-based routing
+// Get the base path from vite config
+const BASE_PATH = import.meta.env.BASE_URL || '/';
+
+// Helper function to generate proper links with base path
 export const getNavLink = (path: string) => {
   // Remove leading slash from path if present
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-  // For hash-based routing, we only need the hash and path, no base path
-  return `#/${cleanPath}`;
+  // Construct the full hash-based URL with base path
+  return `${BASE_PATH}#/${cleanPath}`;
 };
 
 interface NavigationProps {
