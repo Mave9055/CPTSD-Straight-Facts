@@ -1,9 +1,8 @@
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { APP_TITLE } from "@/const";
 
-// Use hardcoded base path for GitHub Pages deployment
-// This ensures links work correctly regardless of environment
-const BASE_PATH = '/CPTSD-Straight-Facts/';
+// Get the base path from vite config
+const BASE_PATH = import.meta.env.BASE_URL || '/';
 
 // Helper function to generate proper links with base path
 export const getNavLink = (path: string) => {
