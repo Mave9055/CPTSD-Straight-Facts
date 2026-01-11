@@ -1,15 +1,16 @@
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { APP_TITLE } from "@/const";
 
-// Get the base path from vite config
-const BASE_PATH = import.meta.env.BASE_URL || '/';
+// Use hardcoded base path for GitHub Pages deployment
+// This ensures links work correctly regardless of environment
+const BASE_PATH = '/CPTSD-Straight-Facts/';
 
 // Helper function to generate proper links with base path
 export const getNavLink = (path: string) => {
   // Remove leading slash from path if present
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   // Construct the full hash-based URL with base path
-  return `/CPTSD-Straight-Facts/#/${cleanPath}`;
+  return `${BASE_PATH}#/${cleanPath}`;
 };
 
 interface NavigationProps {
